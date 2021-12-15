@@ -40,7 +40,7 @@ siguiente ruta:
 
     http://DOMINIO/gateway/authentication/login/
 
-Otro ejemplo sería para obtener una votación por id:
+Otro ejemplo sería para obtener una votación por id: 
 
     http://DOMINIO/gateway/voting/?id=1
 
