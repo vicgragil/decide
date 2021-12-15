@@ -41,11 +41,12 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: decide/coverage.xml
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: " <<your app name>>"
-          heroku_email: " <<your email>>"
+          heroku_app_name: "prueba-ci-vicgragil"
+          heroku_email: "victorgranero.vgg@gmail.com"
